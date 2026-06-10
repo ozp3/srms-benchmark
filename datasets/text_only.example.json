@@ -1,0 +1,99 @@
+[
+  {
+    "id": "TXT_ROAD_001",
+    "text": "pothole cracking asphalt lane near busy intersection",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "road_damage",
+      "priority": 4,
+      "department": "Fen Isleri"
+    }
+  },
+  {
+    "id": "TXT_ROAD_002",
+    "text": "huge pothole blocking right lane on main highway",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "road_damage",
+      "priority": 5,
+      "department": "Fen Isleri"
+    }
+  },
+  {
+    "id": "TXT_WASTE_001",
+    "text": "overflowing garbage bins scattered along residential sidewalk",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "waste",
+      "priority": 3,
+      "department": "Temizlik Isleri"
+    }
+  },
+  {
+    "id": "TXT_LIGHT_001",
+    "text": "broken streetlight leaning over pedestrian crossing near school",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "lighting",
+      "priority": 4,
+      "department": "Elektrik Birimi"
+    }
+  },
+  {
+    "id": "TXT_NATURAL_001",
+    "text": "fallen tree trunk blocking entire urban road near buildings",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "natural_disaster",
+      "priority": 5,
+      "department": "Afet Koordinasyon"
+    }
+  },
+  {
+    "id": "TXT_ANIMAL_001",
+    "text": "stray dogs gathered near school gate entrance",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "stray_animal",
+      "priority": 3,
+      "department": "Veteriner Birimi"
+    }
+  },
+  {
+    "id": "TXT_NORMAL_001",
+    "text": "clean road no damage visible near area",
+    "difficulty": "easy",
+    "expected_classifier": {
+      "category": "normal",
+      "priority": 1
+    }
+  },
+  {
+    "id": "TXT_VANDAL_001",
+    "text": "graffiti vandalism covering entire bus stop wall near park",
+    "difficulty": "medium",
+    "expected_classifier": {
+      "category": "vandalism",
+      "priority": 2,
+      "department": "Zabita"
+    }
+  },
+  {
+    "id": "TXT_SEWAGE_001",
+    "text": "sewage water overflowing onto sidewalk near market",
+    "difficulty": "medium",
+    "expected_classifier": {
+      "category": "sewage_water",
+      "priority": 4,
+      "department": "Su ve Kanalizasyon"
+    }
+  },
+  {
+    "id": "TXT_TROLL_001",
+    "text": "random nonsense text that means nothing at all",
+    "difficulty": "adversarial",
+    "expected_classifier": {
+      "category": "irrelevant"
+    }
+  }
+]

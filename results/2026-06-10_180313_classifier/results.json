@@ -1,0 +1,3146 @@
+{
+  "timestamp": "2026-06-10T18:03:07.918237",
+  "dataset": "text_only.json",
+  "dataset_size": 300,
+  "suite": "classifier",
+  "config": {
+    "onnx_path": "C:\\Users\\PC\\Documents\\Claude Code\\Deepseek\\srms-benchmark\\v1\\models\\text_classifier_v10.onnx"
+  },
+  "modules": {
+    "classifier": {
+      "module": "classifier",
+      "adapter": "distilbert-onnx:text_classifier_v10",
+      "n_cases": 300,
+      "category_accuracy": 0.9066666666666666,
+      "category_macro_f1": 0.9048697231809186,
+      "category_weighted_f1": 0.9073694865630348,
+      "per_class_prf": {
+        "road_damage": {
+          "precision": 0.7727272727272727,
+          "recall": 1.0,
+          "f1": 0.8717948717948718,
+          "support": 17
+        },
+        "sidewalk_damage": {
+          "precision": 0.9375,
+          "recall": 0.8823529411764706,
+          "f1": 0.9090909090909091,
+          "support": 17
+        },
+        "waste": {
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888,
+          "support": 17
+        },
+        "pollution": {
+          "precision": 0.875,
+          "recall": 0.8235294117647058,
+          "f1": 0.8484848484848485,
+          "support": 17
+        },
+        "green_space": {
+          "precision": 0.75,
+          "recall": 0.8823529411764706,
+          "f1": 0.8108108108108107,
+          "support": 17
+        },
+        "lighting": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 17
+        },
+        "traffic_sign": {
+          "precision": 1.0,
+          "recall": 0.9411764705882353,
+          "f1": 0.9696969696969697,
+          "support": 17
+        },
+        "sewage_water": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8823529411764706,
+          "f1": 0.8823529411764706,
+          "support": 17
+        },
+        "infrastructure": {
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "f1": 0.9411764705882353,
+          "support": 17
+        },
+        "vandalism": {
+          "precision": 0.9285714285714286,
+          "recall": 0.7647058823529411,
+          "f1": 0.8387096774193549,
+          "support": 17
+        },
+        "stray_animal": {
+          "precision": 1.0,
+          "recall": 0.9411764705882353,
+          "f1": 0.9696969696969697,
+          "support": 17
+        },
+        "natural_disaster": {
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "f1": 0.9411764705882353,
+          "support": 17
+        },
+        "normal": {
+          "precision": 0.825,
+          "recall": 0.8048780487804879,
+          "f1": 0.8148148148148149,
+          "support": 41
+        },
+        "irrelevant": {
+          "precision": 1.0,
+          "recall": 0.9636363636363636,
+          "f1": 0.9814814814814815,
+          "support": 55
+        }
+      },
+      "confusion_matrix": {
+        "road_damage": {
+          "road_damage": 17,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "sidewalk_damage": {
+          "road_damage": 2,
+          "sidewalk_damage": 15,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "waste": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 16,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 1,
+          "irrelevant": 0
+        },
+        "pollution": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 1,
+          "pollution": 14,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 2,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "green_space": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 15,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 1,
+          "normal": 1,
+          "irrelevant": 0
+        },
+        "lighting": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 17,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "traffic_sign": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 16,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 1,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "sewage_water": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 1,
+          "pollution": 1,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 15,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "infrastructure": {
+          "road_damage": 0,
+          "sidewalk_damage": 1,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 16,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "vandalism": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 2,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 13,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 2,
+          "irrelevant": 0
+        },
+        "stray_animal": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 16,
+          "natural_disaster": 0,
+          "normal": 1,
+          "irrelevant": 0
+        },
+        "natural_disaster": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 1,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 16,
+          "normal": 0,
+          "irrelevant": 0
+        },
+        "normal": {
+          "road_damage": 3,
+          "sidewalk_damage": 0,
+          "waste": 1,
+          "pollution": 1,
+          "green_space": 2,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 1,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 33,
+          "irrelevant": 0
+        },
+        "irrelevant": {
+          "road_damage": 0,
+          "sidewalk_damage": 0,
+          "waste": 0,
+          "pollution": 0,
+          "green_space": 0,
+          "lighting": 0,
+          "traffic_sign": 0,
+          "sewage_water": 0,
+          "infrastructure": 0,
+          "vandalism": 0,
+          "stray_animal": 0,
+          "natural_disaster": 0,
+          "normal": 2,
+          "irrelevant": 53
+        }
+      },
+      "priority_accuracy_exact": 0.6266666666666667,
+      "priority_accuracy_tol1": 0.94,
+      "priority_accuracy_tol2": 0.9933333333333333,
+      "priority_mae": 0.44333333333333336,
+      "per_priority_prf": {
+        "0": {
+          "precision": 0.9811320754716981,
+          "recall": 0.9454545454545454,
+          "f1": 0.9629629629629629,
+          "support": 55
+        },
+        "1": {
+          "precision": 0.8205128205128205,
+          "recall": 0.7804878048780488,
+          "f1": 0.8,
+          "support": 41
+        },
+        "2": {
+          "precision": 0.34285714285714286,
+          "recall": 0.42857142857142855,
+          "f1": 0.38095238095238093,
+          "support": 28
+        },
+        "3": {
+          "precision": 0.5816326530612245,
+          "recall": 0.6333333333333333,
+          "f1": 0.6063829787234042,
+          "support": 90
+        },
+        "4": {
+          "precision": 0.4727272727272727,
+          "recall": 0.4126984126984127,
+          "f1": 0.44067796610169485,
+          "support": 63
+        },
+        "5": {
+          "precision": 0.45,
+          "recall": 0.391304347826087,
+          "f1": 0.4186046511627907,
+          "support": 23
+        }
+      },
+      "priority_confusion_matrix": {
+        "0": {
+          "0": 52,
+          "1": 2,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "1": {
+          "0": 0,
+          "1": 32,
+          "2": 8,
+          "3": 0,
+          "4": 0,
+          "5": 1
+        },
+        "2": {
+          "0": 0,
+          "1": 2,
+          "2": 12,
+          "3": 9,
+          "4": 5,
+          "5": 0
+        },
+        "3": {
+          "0": 1,
+          "1": 3,
+          "2": 13,
+          "3": 57,
+          "4": 14,
+          "5": 2
+        },
+        "4": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 28,
+          "4": 26,
+          "5": 8
+        },
+        "5": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 10,
+          "5": 9
+        }
+      },
+      "priority_distribution": {
+        "expected": {
+          "0": 55,
+          "1": 41,
+          "2": 28,
+          "3": 90,
+          "4": 63,
+          "5": 23
+        },
+        "predicted": {
+          "0": 53,
+          "1": 39,
+          "2": 35,
+          "3": 98,
+          "4": 55,
+          "5": 20
+        }
+      },
+      "department_accuracy": 0.9264705882352942,
+      "ece": 0.068189,
+      "avg_confidence": 0.8591403333333333,
+      "cases": [
+        {
+          "id": "TXT_ROAD_E001",
+          "difficulty": "easy",
+          "text": "pothole cracking asphalt lane near busy intersection",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9428,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E002",
+          "difficulty": "easy",
+          "text": "multiple deep potholes spreading across main road surface",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9488,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E003",
+          "difficulty": "easy",
+          "text": "large sinkhole forming middle road residential neighborhood",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.6949,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E004",
+          "difficulty": "easy",
+          "text": "severe road buckling damaging vehicle access main avenue",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9253,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E005",
+          "difficulty": "easy",
+          "text": "asphalt surface crumbling completely along highway lane",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9325,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E006",
+          "difficulty": "easy",
+          "text": "wide crack splitting road surface near pedestrian crossing",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9496,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_E007",
+          "difficulty": "easy",
+          "text": "road edge collapsing exposing dangerous drop near sidewalk",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.933,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E001",
+          "difficulty": "easy",
+          "text": "broken pavement tiles blocking pedestrian walkway near school",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9311,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E002",
+          "difficulty": "easy",
+          "text": "cracked sidewalk surface uplifted by tree roots near park",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9088,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E003",
+          "difficulty": "easy",
+          "text": "missing pavement section creating gap pedestrian path",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.919,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E004",
+          "difficulty": "easy",
+          "text": "concrete sidewalk completely shattered residential housing area",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9258,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E005",
+          "difficulty": "easy",
+          "text": "uneven walkway tiles causing trip hazard near hospital",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9412,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E006",
+          "difficulty": "easy",
+          "text": "collapsed sidewalk section exposing soil dangerous walkway condition",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9227,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_E007",
+          "difficulty": "easy",
+          "text": "broken curb stones scattered along main pedestrian route",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9301,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E001",
+          "difficulty": "easy",
+          "text": "overflowing garbage bins scattered along residential sidewalk",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9381,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E002",
+          "difficulty": "easy",
+          "text": "large illegal waste dump covering park area near buildings",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9333,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E003",
+          "difficulty": "easy",
+          "text": "scattered litter accumulating along street curb near shops",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9252,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E004",
+          "difficulty": "easy",
+          "text": "plastic bottles cans piled blocking storm drain entrance",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9335,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E005",
+          "difficulty": "easy",
+          "text": "abandoned mattress furniture dumped roadside near intersection",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9218,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E006",
+          "difficulty": "easy",
+          "text": "food waste rotting attracting pests street corner residential",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.8839,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_E007",
+          "difficulty": "easy",
+          "text": "construction debris dumped illegally green space residential area",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9423,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E001",
+          "difficulty": "easy",
+          "text": "thick black smoke emission factory chimney near residential area",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9269,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E002",
+          "difficulty": "easy",
+          "text": "dark water discharge flowing into canal near park entrance",
+          "expected_category": "pollution",
+          "predicted_category": "sewage_water",
+          "confidence": 0.7128,
+          "correct": false
+        },
+        {
+          "id": "TXT_POLL_E003",
+          "difficulty": "easy",
+          "text": "oil spill spreading across road surface near gas station",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.923,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E004",
+          "difficulty": "easy",
+          "text": "visible chemical foam covering river surface near industrial zone",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9337,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E005",
+          "difficulty": "easy",
+          "text": "heavy dust cloud rising construction site near schools",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.8267,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E006",
+          "difficulty": "easy",
+          "text": "industrial smoke darkening sky over residential neighborhood",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9241,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_E007",
+          "difficulty": "easy",
+          "text": "polluted runoff water staining sidewalks near factory entrance",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.8898,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E001",
+          "difficulty": "easy",
+          "text": "neglected overgrown vegetation covering park bench area",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9076,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E002",
+          "difficulty": "easy",
+          "text": "dead dried trees standing along park pathway no maintenance",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9348,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E003",
+          "difficulty": "easy",
+          "text": "fallen tree blocking park entrance after recent storm",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.5059,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E004",
+          "difficulty": "easy",
+          "text": "wilting plants dying flower beds public garden area",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9043,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E005",
+          "difficulty": "easy",
+          "text": "broken irrigation system damaging park lawn surface",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.8805,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E006",
+          "difficulty": "easy",
+          "text": "uprooted bushes scattered park playground recreational zone",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9116,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_E007",
+          "difficulty": "easy",
+          "text": "abandoned tree stumps creating obstacles park walking trail",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9233,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E001",
+          "difficulty": "easy",
+          "text": "broken streetlight leaning over pedestrian crossing near school",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9415,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E002",
+          "difficulty": "easy",
+          "text": "multiple streetlights non-functional along dark residential road",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9387,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E003",
+          "difficulty": "easy",
+          "text": "damaged streetlight pole bent over sidewalk near bus stop",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9285,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E004",
+          "difficulty": "easy",
+          "text": "fallen lamppost blocking sidewalk near busy intersection",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9393,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E005",
+          "difficulty": "easy",
+          "text": "exposed electrical wires hanging streetlight near residential area",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9395,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E006",
+          "difficulty": "easy",
+          "text": "completely dark street section missing functional lighting",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.939,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_E007",
+          "difficulty": "easy",
+          "text": "shattered streetlight cover scattered glass pedestrian path",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9337,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E001",
+          "difficulty": "easy",
+          "text": "fallen traffic sign lying on road surface near intersection",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9417,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E002",
+          "difficulty": "easy",
+          "text": "faded stop sign barely visible at residential street corner",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.8796,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E003",
+          "difficulty": "easy",
+          "text": "missing speed limit sign dangerous curve mountain road",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9353,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E004",
+          "difficulty": "easy",
+          "text": "damaged yield sign bent unreadable busy intersection corner",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9259,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E005",
+          "difficulty": "easy",
+          "text": "vandalized direction signs covered graffiti highway exit ramp",
+          "expected_category": "traffic_sign",
+          "predicted_category": "vandalism",
+          "confidence": 0.9037,
+          "correct": false
+        },
+        {
+          "id": "TXT_TRAF_E006",
+          "difficulty": "easy",
+          "text": "broken traffic light pole hanging dangerously above intersection",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.8258,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_E007",
+          "difficulty": "easy",
+          "text": "removed pedestrian crossing sign near school zone area",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9299,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E001",
+          "difficulty": "easy",
+          "text": "overflowing manhole sewage water spreading across road surface",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9243,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E002",
+          "difficulty": "easy",
+          "text": "blocked drain causing water accumulation near residential building",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9431,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E003",
+          "difficulty": "easy",
+          "text": "burst water pipe flooding street near apartment buildings",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.8439,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E004",
+          "difficulty": "easy",
+          "text": "raw sewage leaking street curb residential area visible",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9458,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E005",
+          "difficulty": "easy",
+          "text": "waste water pooling pedestrian crossing near school zone",
+          "expected_category": "sewage_water",
+          "predicted_category": "waste",
+          "confidence": 0.6777,
+          "correct": false
+        },
+        {
+          "id": "TXT_SEWA_E006",
+          "difficulty": "easy",
+          "text": "drainage failure causing flooding pedestrian underpass tunnel area",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.635,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_E007",
+          "difficulty": "easy",
+          "text": "contaminated water flowing storm drain residential street area",
+          "expected_category": "sewage_water",
+          "predicted_category": "pollution",
+          "confidence": 0.6292,
+          "correct": false
+        },
+        {
+          "id": "TXT_INFR_E001",
+          "difficulty": "easy",
+          "text": "cracked concrete wall crumbling near pedestrian walkway entrance",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9127,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_E002",
+          "difficulty": "easy",
+          "text": "corroded metal railing missing sections along bridge walkway",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.8662,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_E003",
+          "difficulty": "easy",
+          "text": "collapsed retaining wall blocking access residential street",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9252,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_E004",
+          "difficulty": "easy",
+          "text": "broken bus stop shelter damaged glass scattered sidewalk",
+          "expected_category": "infrastructure",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.6676,
+          "correct": false
+        },
+        {
+          "id": "TXT_INFR_E005",
+          "difficulty": "easy",
+          "text": "deteriorating bridge support showing structural cracks visible",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9013,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_E006",
+          "difficulty": "easy",
+          "text": "rusted handrail breaking apart pedestrian overpass dangerous",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9428,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_E007",
+          "difficulty": "easy",
+          "text": "crumbling stone wall threatening collapse near sidewalk path",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9129,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_E001",
+          "difficulty": "easy",
+          "text": "graffiti covering entire bus stop wall surface near school",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9157,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_E002",
+          "difficulty": "easy",
+          "text": "broken public bench parts scattered near park playground area",
+          "expected_category": "vandalism",
+          "predicted_category": "green_space",
+          "confidence": 0.7911,
+          "correct": false
+        },
+        {
+          "id": "TXT_VAND_E003",
+          "difficulty": "easy",
+          "text": "smashed bus stop glass shelter scattered fragments sidewalk",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9152,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_E004",
+          "difficulty": "easy",
+          "text": "destroyed playground equipment damaged park recreational zone",
+          "expected_category": "vandalism",
+          "predicted_category": "green_space",
+          "confidence": 0.8597,
+          "correct": false
+        },
+        {
+          "id": "TXT_VAND_E005",
+          "difficulty": "easy",
+          "text": "spray painted statue damaged historical monument plaza area",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9215,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_E006",
+          "difficulty": "easy",
+          "text": "ripped public notice boards torn signs bus station area",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9423,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_E007",
+          "difficulty": "easy",
+          "text": "defaced government building walls covered offensive graffiti",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9199,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E001",
+          "difficulty": "easy",
+          "text": "stray dogs gathered near school gate entrance area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9053,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E002",
+          "difficulty": "easy",
+          "text": "multiple stray cats roaming near restaurant waste bins",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9274,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E003",
+          "difficulty": "easy",
+          "text": "injured stray dog limping middle residential street area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9055,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E004",
+          "difficulty": "easy",
+          "text": "aggressive pack of dogs threatening pedestrians sidewalk area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9161,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E005",
+          "difficulty": "easy",
+          "text": "dead animal carcass lying roadside near residential building",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.798,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E006",
+          "difficulty": "easy",
+          "text": "abandoned puppies near playground school zone area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.856,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_E007",
+          "difficulty": "easy",
+          "text": "stray cats colonizing public park building basement entrance",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9167,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E001",
+          "difficulty": "easy",
+          "text": "fallen tree trunk blocking entire urban road near buildings",
+          "expected_category": "natural_disaster",
+          "predicted_category": "green_space",
+          "confidence": 0.8449,
+          "correct": false
+        },
+        {
+          "id": "TXT_NATU_E002",
+          "difficulty": "easy",
+          "text": "flood water covering residential street after heavy rain",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9249,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E003",
+          "difficulty": "easy",
+          "text": "landslide debris blocking mountain road residential access",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9353,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E004",
+          "difficulty": "easy",
+          "text": "storm damage scattered debris across pedestrian walkway area",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9056,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E005",
+          "difficulty": "easy",
+          "text": "earthquake cracks visible along building exterior wall",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.91,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E006",
+          "difficulty": "easy",
+          "text": "snow accumulation blocking entire residential street access",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.8854,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_E007",
+          "difficulty": "easy",
+          "text": "tornado damage destroyed roof tiles scattered street area",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9208,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E001",
+          "difficulty": "easy",
+          "text": "clean road no damage visible near residential area",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9285,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E002",
+          "difficulty": "easy",
+          "text": "well maintained sidewalk clear pedestrian path residential area",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9251,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E003",
+          "difficulty": "easy",
+          "text": "clean park area benches intact no visible issues",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9324,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E004",
+          "difficulty": "easy",
+          "text": "maintained road surface no damage or debris visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9238,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E005",
+          "difficulty": "easy",
+          "text": "tidy public square clean pavement intact infrastructure visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9289,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E006",
+          "difficulty": "easy",
+          "text": "fresh asphalt smooth road surface no defects visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9227,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E007",
+          "difficulty": "easy",
+          "text": "neatly trimmed park hedges clean pathways green space",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9326,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E008",
+          "difficulty": "easy",
+          "text": "functioning streetlights clean residential road no issues visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9285,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E009",
+          "difficulty": "easy",
+          "text": "clear drainage well maintained sewage system area visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.918,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E010",
+          "difficulty": "easy",
+          "text": "clean bus stop intact glass shelter pedestrian area",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.93,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_E011",
+          "difficulty": "easy",
+          "text": "well kept residential neighborhood no environmental damage visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9288,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E001",
+          "difficulty": "easy",
+          "text": "person taking selfie outdoor park no environmental issues visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8878,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E002",
+          "difficulty": "easy",
+          "text": "food plate meal visible indoor restaurant table setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9214,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E003",
+          "difficulty": "easy",
+          "text": "indoor office workspace desk computer equipment visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9298,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E004",
+          "difficulty": "easy",
+          "text": "cartoon drawing fictional character illustration no real photo",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8512,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E005",
+          "difficulty": "easy",
+          "text": "screenshot mobile phone interface no real environment visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9081,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E006",
+          "difficulty": "easy",
+          "text": "close up product packaging hand holding object indoor setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9266,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E007",
+          "difficulty": "easy",
+          "text": "wedding photo couple posing studio background indoor setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9226,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E008",
+          "difficulty": "easy",
+          "text": "concert stage performance lights crowd entertainment indoor venue",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8954,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E009",
+          "difficulty": "easy",
+          "text": "domestic cat sleeping couch indoor home environment",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9199,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_E010",
+          "difficulty": "easy",
+          "text": "abstract art painting decorative wall mounted gallery indoor",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9017,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M001",
+          "difficulty": "medium",
+          "text": "road surface deteriorating near school zone light traffic area",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9219,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M002",
+          "difficulty": "medium",
+          "text": "asphalt damage visible cracking spreading slowly residential street",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9341,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M003",
+          "difficulty": "medium",
+          "text": "road damage appearing near construction zone difficult assess severity",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9396,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M004",
+          "difficulty": "medium",
+          "text": "uneven road surface multiple patches near busy intersection",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9557,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M005",
+          "difficulty": "medium",
+          "text": "small cracks spreading wider road section near commercial area",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9423,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_M006",
+          "difficulty": "medium",
+          "text": "road surface showing wear difficult determine repair urgency",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9383,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_M001",
+          "difficulty": "medium",
+          "text": "pedestrian path damaged garbage piling up near building entrance",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.4487,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_M002",
+          "difficulty": "medium",
+          "text": "walkway surface broken stones scattered blocking residential path",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9392,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_M003",
+          "difficulty": "medium",
+          "text": "sidewalk uneven near tree some tiles loose unclear severity",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.9201,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_M004",
+          "difficulty": "medium",
+          "text": "damaged pavement section near construction unclear if temporary",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.8032,
+          "correct": false
+        },
+        {
+          "id": "TXT_SIDE_M005",
+          "difficulty": "medium",
+          "text": "partial sidewalk damage near bus stop pedestrians navigating around",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.8895,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_M006",
+          "difficulty": "medium",
+          "text": "cracks appearing sidewalk surface spreading slowly residential block",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.825,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M001",
+          "difficulty": "medium",
+          "text": "waste accumulation near cracked sidewalk residential building entrance",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9358,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M002",
+          "difficulty": "medium",
+          "text": "construction material left on public sidewalk blocking pedestrians",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.912,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M003",
+          "difficulty": "medium",
+          "text": "mixed garbage recyclables scattered around bins near park",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9283,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M004",
+          "difficulty": "medium",
+          "text": "waste bags piled outside collection point unclear pickup schedule",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9272,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M005",
+          "difficulty": "medium",
+          "text": "occasional litter throughout park area unclear extent of problem",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.871,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_M006",
+          "difficulty": "medium",
+          "text": "partially full bins overflowing residential corner unclear collection schedule",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9178,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_M001",
+          "difficulty": "medium",
+          "text": "burning waste pile smoke spreading near residential buildings area",
+          "expected_category": "pollution",
+          "predicted_category": "waste",
+          "confidence": 0.7587,
+          "correct": false
+        },
+        {
+          "id": "TXT_POLL_M002",
+          "difficulty": "medium",
+          "text": "murky water visible drainage channel near factory no clear spill",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.4986,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_M003",
+          "difficulty": "medium",
+          "text": "faint chemical odor near industrial area difficult identify source",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9284,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_M004",
+          "difficulty": "medium",
+          "text": "dust accumulation buildings near construction unclear pollution levels",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9316,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_M005",
+          "difficulty": "medium",
+          "text": "discolored water trickle storm drain near residential complex",
+          "expected_category": "pollution",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9433,
+          "correct": false
+        },
+        {
+          "id": "TXT_POLL_M006",
+          "difficulty": "medium",
+          "text": "light smoke residue surfaces near industrial road residential area",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9265,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_M001",
+          "difficulty": "medium",
+          "text": "tree branches hanging low over road after wind no blocking",
+          "expected_category": "green_space",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9107,
+          "correct": false
+        },
+        {
+          "id": "TXT_GREE_M002",
+          "difficulty": "medium",
+          "text": "overgrown trees blocking streetlights residential area causing darkness",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.8378,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_M003",
+          "difficulty": "medium",
+          "text": "partially dying plants flower beds difficult assess overall health",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.8978,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_M004",
+          "difficulty": "medium",
+          "text": "neglected landscape mixed with maintained sections public park",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.7828,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_M005",
+          "difficulty": "medium",
+          "text": "fallen leaves accumulating drainage area near park unclear blockage",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9142,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_M006",
+          "difficulty": "medium",
+          "text": "scattered plant debris park pathway unclear maintenance schedule",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9096,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M001",
+          "difficulty": "medium",
+          "text": "single flickering streetlight functional but intermittent near park",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9364,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M002",
+          "difficulty": "medium",
+          "text": "dark street area multiple lights appear non-functional residential road",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9527,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M003",
+          "difficulty": "medium",
+          "text": "streetlight pole intact bulb missing area partially dark residential",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.8823,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M004",
+          "difficulty": "medium",
+          "text": "dim lighting residential street some lamps weak not bright",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9457,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M005",
+          "difficulty": "medium",
+          "text": "partial darkness pedestrian path some streetlights working others not",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9299,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_M006",
+          "difficulty": "medium",
+          "text": "inconsistent street lighting commercial area difficult assess functionality",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9112,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M001",
+          "difficulty": "medium",
+          "text": "traffic sign partially visible overgrown vegetation blocking view",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9413,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M002",
+          "difficulty": "medium",
+          "text": "bent road sign post leaning over pedestrian path near shop",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9076,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M003",
+          "difficulty": "medium",
+          "text": "partially worn directional sign difficult read certain angles intersection",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.935,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M004",
+          "difficulty": "medium",
+          "text": "faded paint road markings combined with visible signs intersection unclear",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.8946,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M005",
+          "difficulty": "medium",
+          "text": "sign pole rusted damaged visibility partially affected commercial area",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9306,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_M006",
+          "difficulty": "medium",
+          "text": "sign placement obstructed by parked vehicles near busy intersection",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.944,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M001",
+          "difficulty": "medium",
+          "text": "standing water road surface drainage system appears inadequate",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.848,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M002",
+          "difficulty": "medium",
+          "text": "slight sewage smell drainage area no visible overflow yet",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9351,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M003",
+          "difficulty": "medium",
+          "text": "water pooling sidewalk near drain unclear if blocked or normal",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9596,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M004",
+          "difficulty": "medium",
+          "text": "damp areas pedestrian path difficult identify water source",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.372,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M005",
+          "difficulty": "medium",
+          "text": "slow drainage after rain residential street clearing eventually",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.6239,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_M006",
+          "difficulty": "medium",
+          "text": "moisture seeping curb area near manhole cover unclear extent",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9533,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M001",
+          "difficulty": "medium",
+          "text": "damaged utility pole leaning over road near traffic signal area",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.8079,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M002",
+          "difficulty": "medium",
+          "text": "crumbling retaining wall near pedestrian pathway showing significant wear",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.929,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M003",
+          "difficulty": "medium",
+          "text": "partial wall damage near sidewalk unclear if structural concern",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.8661,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M004",
+          "difficulty": "medium",
+          "text": "some loose railings bridge walkway difficult full assessment",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.751,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M005",
+          "difficulty": "medium",
+          "text": "weathered infrastructure showing age near pedestrian zone",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.8859,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_M006",
+          "difficulty": "medium",
+          "text": "partially damaged barriers bridge visible some sections intact",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9364,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M001",
+          "difficulty": "medium",
+          "text": "graffiti on broken bench near bus stop public area",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9366,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M002",
+          "difficulty": "medium",
+          "text": "vandalized traffic signs unreadable near dangerous intersection area",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.6499,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M003",
+          "difficulty": "medium",
+          "text": "partial graffiti spreading building wall residential area",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9088,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M004",
+          "difficulty": "medium",
+          "text": "damaged park bench likely vandalism difficult assess intentional",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9354,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M005",
+          "difficulty": "medium",
+          "text": "some broken playground equipment unclear vandalism or wear",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.9013,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_M006",
+          "difficulty": "medium",
+          "text": "minor defacement public property scattered residential area unclear scale",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.5501,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M001",
+          "difficulty": "medium",
+          "text": "stray cats dogs mixed group near waste bins residential area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9217,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M002",
+          "difficulty": "medium",
+          "text": "animal control needed multiple dogs children playground nearby area",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.8575,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M003",
+          "difficulty": "medium",
+          "text": "occasional stray animals visible park area unclear total population",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.907,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M004",
+          "difficulty": "medium",
+          "text": "dog tracks evidence stray presence park unclear current location",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.8804,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M005",
+          "difficulty": "medium",
+          "text": "stray cats appearing residential area difficult count exact number",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.8969,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_M006",
+          "difficulty": "medium",
+          "text": "animals near food waste residential street unclear long-term presence",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.9057,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M001",
+          "difficulty": "medium",
+          "text": "storm damage tree debris partially blocking residential road area",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.935,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M002",
+          "difficulty": "medium",
+          "text": "heavy rain flooding low-lying road section near underpass area",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9197,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M003",
+          "difficulty": "medium",
+          "text": "partial flooding street unclear if storm or drainage failure",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9496,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M004",
+          "difficulty": "medium",
+          "text": "wind damage scattered debris near commercial area unclear severity",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.8908,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M005",
+          "difficulty": "medium",
+          "text": "earthquake possibly minor cracks building exterior unclear assessment",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9016,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_M006",
+          "difficulty": "medium",
+          "text": "weather related damage roof tiles scattered residential area",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.3768,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_M001",
+          "difficulty": "medium",
+          "text": "road surface appears clean minor dust accumulation no damage",
+          "expected_category": "normal",
+          "predicted_category": "road_damage",
+          "confidence": 0.3481,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M002",
+          "difficulty": "medium",
+          "text": "street appears intact minimal debris near residential area clean",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.3313,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_M003",
+          "difficulty": "medium",
+          "text": "mostly clean park area minor leaf scatter no real issues",
+          "expected_category": "normal",
+          "predicted_category": "green_space",
+          "confidence": 0.6837,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M004",
+          "difficulty": "medium",
+          "text": "residential street appears maintained unclear maintenance schedule",
+          "expected_category": "normal",
+          "predicted_category": "road_damage",
+          "confidence": 0.2726,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M005",
+          "difficulty": "medium",
+          "text": "somewhat dusty road surface no actual damage visible",
+          "expected_category": "normal",
+          "predicted_category": "road_damage",
+          "confidence": 0.9089,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M006",
+          "difficulty": "medium",
+          "text": "clear pedestrian path minor surface wear no maintenance needed",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8237,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_M007",
+          "difficulty": "medium",
+          "text": "functional infrastructure minor signs of age no urgent issues",
+          "expected_category": "normal",
+          "predicted_category": "infrastructure",
+          "confidence": 0.8837,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M008",
+          "difficulty": "medium",
+          "text": "acceptable park condition minor wear no significant damage visible",
+          "expected_category": "normal",
+          "predicted_category": "green_space",
+          "confidence": 0.6527,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_M009",
+          "difficulty": "medium",
+          "text": "typical residential street normal wear no environmental concerns",
+          "expected_category": "normal",
+          "predicted_category": "pollution",
+          "confidence": 0.384,
+          "correct": false
+        },
+        {
+          "id": "TXT_IRRE_M001",
+          "difficulty": "medium",
+          "text": "outdoor scene visible person walking dog no environmental issues",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8766,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M002",
+          "difficulty": "medium",
+          "text": "construction site active workers visible normal activity ongoing",
+          "expected_category": "irrelevant",
+          "predicted_category": "normal",
+          "confidence": 0.6222,
+          "correct": false
+        },
+        {
+          "id": "TXT_IRRE_M003",
+          "difficulty": "medium",
+          "text": "parking lot vehicles parked normal commercial activity visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "normal",
+          "confidence": 0.4658,
+          "correct": false
+        },
+        {
+          "id": "TXT_IRRE_M004",
+          "difficulty": "medium",
+          "text": "outdoor cafe table chairs visible normal restaurant scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8945,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M005",
+          "difficulty": "medium",
+          "text": "people gathering outdoor event no environmental damage visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.5526,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M006",
+          "difficulty": "medium",
+          "text": "street market vendors visible normal commercial area scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.2373,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M007",
+          "difficulty": "medium",
+          "text": "school children outdoor activity playground supervised setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.3666,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M008",
+          "difficulty": "medium",
+          "text": "outdoor sports event spectators visible normal recreational activity",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.7905,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_M009",
+          "difficulty": "medium",
+          "text": "tourist landmark visitors photographing normal sightseeing scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.6208,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_H001",
+          "difficulty": "hard",
+          "text": "road damage area",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9417,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_H002",
+          "difficulty": "hard",
+          "text": "pothole somewhere",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9281,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_H003",
+          "difficulty": "hard",
+          "text": "asphalt issue",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.8961,
+          "correct": true
+        },
+        {
+          "id": "TXT_ROAD_H004",
+          "difficulty": "hard",
+          "text": "road seems fine but actually has serious crack center lane",
+          "expected_category": "road_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.9262,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_H001",
+          "difficulty": "hard",
+          "text": "broken sidewalk",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.8858,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_H002",
+          "difficulty": "hard",
+          "text": "path issue",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "road_damage",
+          "confidence": 0.2199,
+          "correct": false
+        },
+        {
+          "id": "TXT_SIDE_H003",
+          "difficulty": "hard",
+          "text": "sidewalk mostly intact small section collapsed near corner",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.8627,
+          "correct": true
+        },
+        {
+          "id": "TXT_SIDE_H004",
+          "difficulty": "hard",
+          "text": "walkway looks normal closer inspection reveals significant damage",
+          "expected_category": "sidewalk_damage",
+          "predicted_category": "sidewalk_damage",
+          "confidence": 0.8563,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_H001",
+          "difficulty": "hard",
+          "text": "garbage area",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9419,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_H002",
+          "difficulty": "hard",
+          "text": "trash everywhere",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.9439,
+          "correct": true
+        },
+        {
+          "id": "TXT_WAST_H003",
+          "difficulty": "hard",
+          "text": "street appears clean except for hidden waste pile corner",
+          "expected_category": "waste",
+          "predicted_category": "normal",
+          "confidence": 0.5894,
+          "correct": false
+        },
+        {
+          "id": "TXT_WAST_H004",
+          "difficulty": "hard",
+          "text": "animal waste accumulation public walkway residential area",
+          "expected_category": "waste",
+          "predicted_category": "waste",
+          "confidence": 0.917,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_H001",
+          "difficulty": "hard",
+          "text": "smoke visible",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9266,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_H002",
+          "difficulty": "hard",
+          "text": "polluted area",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.9191,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_H003",
+          "difficulty": "hard",
+          "text": "air seems okay distinct chemical smell suggests pollution problem",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.8651,
+          "correct": true
+        },
+        {
+          "id": "TXT_POLL_H004",
+          "difficulty": "hard",
+          "text": "clear sky discoloration suggests air quality issues area",
+          "expected_category": "pollution",
+          "predicted_category": "pollution",
+          "confidence": 0.7234,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_H001",
+          "difficulty": "hard",
+          "text": "tree fallen",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.89,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_H002",
+          "difficulty": "hard",
+          "text": "dead plants",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9073,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_H003",
+          "difficulty": "hard",
+          "text": "green area appears fine but trees actually dying inspection",
+          "expected_category": "green_space",
+          "predicted_category": "green_space",
+          "confidence": 0.9079,
+          "correct": true
+        },
+        {
+          "id": "TXT_GREE_H004",
+          "difficulty": "hard",
+          "text": "park looks well-kept multiple dying plants flower beds",
+          "expected_category": "green_space",
+          "predicted_category": "normal",
+          "confidence": 0.6174,
+          "correct": false
+        },
+        {
+          "id": "TXT_LIGH_H001",
+          "difficulty": "hard",
+          "text": "broken light pole",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9137,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_H002",
+          "difficulty": "hard",
+          "text": "dark street",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.8847,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_H003",
+          "difficulty": "hard",
+          "text": "dark area park multiple lights appear failed residential",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9475,
+          "correct": true
+        },
+        {
+          "id": "TXT_LIGH_H004",
+          "difficulty": "hard",
+          "text": "area maintained but single streetlight completely nonfunctional",
+          "expected_category": "lighting",
+          "predicted_category": "lighting",
+          "confidence": 0.9483,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_H001",
+          "difficulty": "hard",
+          "text": "sign down",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.8965,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_H002",
+          "difficulty": "hard",
+          "text": "missing sign",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9269,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_H003",
+          "difficulty": "hard",
+          "text": "no major issues visible except one cracked sign post corner",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.9549,
+          "correct": true
+        },
+        {
+          "id": "TXT_TRAF_H004",
+          "difficulty": "hard",
+          "text": "intersection seems normal but stop sign actually missing critical",
+          "expected_category": "traffic_sign",
+          "predicted_category": "traffic_sign",
+          "confidence": 0.89,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_H001",
+          "difficulty": "hard",
+          "text": "drain blocked",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9444,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_H002",
+          "difficulty": "hard",
+          "text": "sewage leak",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9398,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_H003",
+          "difficulty": "hard",
+          "text": "dry pavement actually has hidden sewage leak underneath visible",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.9496,
+          "correct": true
+        },
+        {
+          "id": "TXT_SEWA_H004",
+          "difficulty": "hard",
+          "text": "street clean but sewage smell suggests problem nearby",
+          "expected_category": "sewage_water",
+          "predicted_category": "sewage_water",
+          "confidence": 0.923,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_H001",
+          "difficulty": "hard",
+          "text": "wall broken",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9183,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_H002",
+          "difficulty": "hard",
+          "text": "structure damage",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9524,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_H003",
+          "difficulty": "hard",
+          "text": "metal barrier bent blocking path near construction area",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.9277,
+          "correct": true
+        },
+        {
+          "id": "TXT_INFR_H004",
+          "difficulty": "hard",
+          "text": "building looks fine but support pillar shows critical cracks",
+          "expected_category": "infrastructure",
+          "predicted_category": "infrastructure",
+          "confidence": 0.904,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_H001",
+          "difficulty": "hard",
+          "text": "graffiti everywhere",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.8918,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_H002",
+          "difficulty": "hard",
+          "text": "vandalized",
+          "expected_category": "vandalism",
+          "predicted_category": "vandalism",
+          "confidence": 0.8855,
+          "correct": true
+        },
+        {
+          "id": "TXT_VAND_H003",
+          "difficulty": "hard",
+          "text": "park looks clean but benches broken near playground area",
+          "expected_category": "vandalism",
+          "predicted_category": "normal",
+          "confidence": 0.6633,
+          "correct": false
+        },
+        {
+          "id": "TXT_VAND_H004",
+          "difficulty": "hard",
+          "text": "peaceful neighborhood significant graffiti hidden alley walls",
+          "expected_category": "vandalism",
+          "predicted_category": "normal",
+          "confidence": 0.8682,
+          "correct": false
+        },
+        {
+          "id": "TXT_ANIM_H001",
+          "difficulty": "hard",
+          "text": "dogs around",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.7996,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_H002",
+          "difficulty": "hard",
+          "text": "cats around",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.491,
+          "correct": true
+        },
+        {
+          "id": "TXT_ANIM_H003",
+          "difficulty": "hard",
+          "text": "clean street except stray dogs gathered corner residential",
+          "expected_category": "stray_animal",
+          "predicted_category": "normal",
+          "confidence": 0.9215,
+          "correct": false
+        },
+        {
+          "id": "TXT_ANIM_H004",
+          "difficulty": "hard",
+          "text": "parked area animals visible could be stray difficult tell",
+          "expected_category": "stray_animal",
+          "predicted_category": "stray_animal",
+          "confidence": 0.8755,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_H001",
+          "difficulty": "hard",
+          "text": "flood damage",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9436,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_H002",
+          "difficulty": "hard",
+          "text": "storm hit",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9131,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_H003",
+          "difficulty": "hard",
+          "text": "mostly fine area but corner shows clear flood damage signs",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.7849,
+          "correct": true
+        },
+        {
+          "id": "TXT_NATU_H004",
+          "difficulty": "hard",
+          "text": "clear weather residual flood damage building foundations visible",
+          "expected_category": "natural_disaster",
+          "predicted_category": "natural_disaster",
+          "confidence": 0.9073,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_H001",
+          "difficulty": "hard",
+          "text": "fine",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8599,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_H002",
+          "difficulty": "hard",
+          "text": "all good",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.7125,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_H003",
+          "difficulty": "hard",
+          "text": "nothing",
+          "expected_category": "normal",
+          "predicted_category": "waste",
+          "confidence": 0.1564,
+          "correct": false
+        },
+        {
+          "id": "TXT_NORM_H004",
+          "difficulty": "hard",
+          "text": "clean and intact",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9235,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_H005",
+          "difficulty": "hard",
+          "text": "road and sidewalk both well-maintained no issues at all",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9213,
+          "correct": true
+        },
+        {
+          "id": "TXT_NORM_H006",
+          "difficulty": "hard",
+          "text": "typical clean residential area no environmental issues visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8858,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H001",
+          "difficulty": "hard",
+          "text": "selfie",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8992,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H002",
+          "difficulty": "hard",
+          "text": "indoor",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8623,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H003",
+          "difficulty": "hard",
+          "text": "food",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.5494,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H004",
+          "difficulty": "hard",
+          "text": "drawing",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8018,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H005",
+          "difficulty": "hard",
+          "text": "person standing outside building no infrastructure damage visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.3779,
+          "correct": true
+        },
+        {
+          "id": "TXT_IRRE_H006",
+          "difficulty": "hard",
+          "text": "vehicle close-up no environmental damage just normal car",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.6888,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_001",
+          "difficulty": "adversarial",
+          "text": "person taking selfie outdoor park background visible behind",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9195,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_002",
+          "difficulty": "adversarial",
+          "text": "group people posing outdoor smiling camera facing visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8998,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_003",
+          "difficulty": "adversarial",
+          "text": "individual portrait outdoor background buildings visible no issues",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.6222,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_004",
+          "difficulty": "adversarial",
+          "text": "indoor room furniture visible ceiling walls floor arrangement",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9209,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_005",
+          "difficulty": "adversarial",
+          "text": "office desk computer equipment visible indoor setting workspace",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9322,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_006",
+          "difficulty": "adversarial",
+          "text": "kitchen appliances counter visible indoor home setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9271,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_007",
+          "difficulty": "adversarial",
+          "text": "food plate meal visible table restaurant indoor setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9158,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_008",
+          "difficulty": "adversarial",
+          "text": "packaged product label visible hand holding object close up",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8681,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_009",
+          "difficulty": "adversarial",
+          "text": "pet cat indoor home environment comfortable surroundings visible",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8753,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_010",
+          "difficulty": "adversarial",
+          "text": "screenshot digital content visible screen interface not real photo",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9154,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_011",
+          "difficulty": "adversarial",
+          "text": "artistic drawing illustration fictional scene not real photograph",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8783,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_012",
+          "difficulty": "adversarial",
+          "text": "cartoon character illustration colorful drawing not actual scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.885,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_013",
+          "difficulty": "adversarial",
+          "text": "cosmetic product close up beauty item indoor display",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.919,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_014",
+          "difficulty": "adversarial",
+          "text": "clothing item displayed mannequin store indoor commercial setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9092,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_015",
+          "difficulty": "adversarial",
+          "text": "mobile phone screen displayed app interface no real environment",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8802,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_016",
+          "difficulty": "adversarial",
+          "text": "handwritten note paper visible close up text content",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8601,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_017",
+          "difficulty": "adversarial",
+          "text": "video game screenshot animated graphics not real photograph",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8755,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_018",
+          "difficulty": "adversarial",
+          "text": "photo album displayed indoor home memorabilia collection",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9238,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_019",
+          "difficulty": "adversarial",
+          "text": "art gallery painting framed wall indoor exhibition setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9217,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_020",
+          "difficulty": "adversarial",
+          "text": "baby photograph indoor home family portrait moment captured",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.926,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_021",
+          "difficulty": "adversarial",
+          "text": "book pages visible reading material indoor close up",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9242,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_022",
+          "difficulty": "adversarial",
+          "text": "plant pot indoor decoration home interior arrangement",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9205,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_023",
+          "difficulty": "adversarial",
+          "text": "computer monitor displaying website not actual environment scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8971,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_024",
+          "difficulty": "adversarial",
+          "text": "wedding ceremony bride groom indoor venue celebration moment",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8977,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_025",
+          "difficulty": "adversarial",
+          "text": "birthday cake candles lit indoor party celebration scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9181,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_026",
+          "difficulty": "adversarial",
+          "text": "anime style illustration character pose colorful drawing artwork",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8623,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_027",
+          "difficulty": "adversarial",
+          "text": "close up flower bouquet indoor floral arrangement display",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9234,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_028",
+          "difficulty": "adversarial",
+          "text": "dental clinic interior medical equipment indoor professional setting",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9144,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_029",
+          "difficulty": "adversarial",
+          "text": "gym interior exercise equipment indoor fitness facility scene",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.9214,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_030",
+          "difficulty": "adversarial",
+          "text": "religious ceremony indoor temple worshipers gathering moment",
+          "expected_category": "irrelevant",
+          "predicted_category": "irrelevant",
+          "confidence": 0.8983,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_031",
+          "difficulty": "adversarial",
+          "text": "clean area no environmental damage visible outdoor surroundings",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9283,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_032",
+          "difficulty": "adversarial",
+          "text": "well maintained road surface clear no issues present area",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9251,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_033",
+          "difficulty": "adversarial",
+          "text": "beautiful park scenery no visible damage issues surroundings",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8966,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_034",
+          "difficulty": "adversarial",
+          "text": "perfectly clean street pristine condition no problems visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9199,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_035",
+          "difficulty": "adversarial",
+          "text": "immaculate sidewalk freshly cleaned no debris damage visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9274,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_036",
+          "difficulty": "adversarial",
+          "text": "well maintained urban environment clean surroundings no issues",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9207,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_037",
+          "difficulty": "adversarial",
+          "text": "spotless public square professional maintenance no damage area",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8634,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_038",
+          "difficulty": "adversarial",
+          "text": "tidy residential street fresh paint clean no environmental concerns",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9303,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_039",
+          "difficulty": "adversarial",
+          "text": "beautifully landscaped park no damage maintenance excellent quality",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9174,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_040",
+          "difficulty": "adversarial",
+          "text": "pristine commercial area clean storefronts no infrastructure issues",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9237,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_041",
+          "difficulty": "adversarial",
+          "text": "clear pedestrian path well lit no damage visible night scene",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9306,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_042",
+          "difficulty": "adversarial",
+          "text": "flawless asphalt surface recent paving no defects visible",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.7884,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_043",
+          "difficulty": "adversarial",
+          "text": "neat residential block clean sidewalks no environmental damage",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9263,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_044",
+          "difficulty": "adversarial",
+          "text": "polished urban infrastructure no visible wear or damage anywhere",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.8829,
+          "correct": true
+        },
+        {
+          "id": "TXT_ADV_045",
+          "difficulty": "adversarial",
+          "text": "orderly park area trimmed grass clean pathways excellent state",
+          "expected_category": "normal",
+          "predicted_category": "normal",
+          "confidence": 0.9278,
+          "correct": true
+        }
+      ]
+    }
+  }
+}
